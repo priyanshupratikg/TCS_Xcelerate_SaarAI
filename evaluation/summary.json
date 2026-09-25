@@ -1,0 +1,32 @@
+{
+  "evaluation": {
+    "dataset": "evaluation\\golden_questions.csv",
+    "questions_in_dataset": 100,
+    "questions_evaluated": 100,
+    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "v1"
+  },
+  "retrieval": {
+    "successful_queries": 70,
+    "retrieval_success_rate": 70.0
+  },
+  "answer_generation": {
+    "successful_answers": 70,
+    "answer_success_rate": 70.0
+  },
+  "quality": {
+    "faithfulness_score": 1.986,
+    "faithfulness_percentage": 99.3,
+    "relevance_score": 1.986,
+    "relevance_percentage": 99.3,
+    "completeness_score": 1.986,
+    "completeness_percentage": 99.3
+  },
+  "performance": {
+    "average_latency_seconds": 3.021,
+    "average_tokens": 894.029,
+    "total_tokens": 62582,
+    "total_estimated_cost_usd": 0.01056855
+  },
+  "timestamp": "2026-09-26 03:31:23"
+}

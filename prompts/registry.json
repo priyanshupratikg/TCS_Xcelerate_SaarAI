@@ -1,0 +1,15 @@
+{
+  "active_version": "v1",
+  "versions": {
+    "v1": {
+      "file": "prompts/v1.md",
+      "status": "baseline",
+      "description": "Original institutional knowledge assistant prompt"
+    },
+    "v2": {
+      "file": "prompts/v2.md",
+      "status": "experiment",
+      "description": "Grounded multi-document SaarAI prompt with stronger citation and partial-context handling"
+    }
+  }
+}

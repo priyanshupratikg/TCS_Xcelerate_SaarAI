@@ -1,0 +1,10 @@
+streamlit
+chromadb
+sentence-transformers
+pypdf
+langchain-text-splitters
+google-genai
+python-dotenv
+pandas
+numpy
+reportlab

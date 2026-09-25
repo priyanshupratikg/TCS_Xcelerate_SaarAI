@@ -1,0 +1,40 @@
+{
+  "dataset": "evaluation\\golden_questions.csv",
+  "questions": 100,
+  "versions": {
+    "v1": {
+      "retrieval_success_rate": 0.0,
+      "answer_success_rate": 0.0,
+      "faithfulness_percentage": null,
+      "relevance_percentage": null,
+      "completeness_percentage": null,
+      "average_latency_seconds": 5.863,
+      "average_tokens": null,
+      "total_tokens": 0,
+      "total_estimated_cost_usd": 0.0
+    },
+    "v2": {
+      "retrieval_success_rate": 28.0,
+      "answer_success_rate": 28.0,
+      "faithfulness_percentage": 98.2,
+      "relevance_percentage": 100.0,
+      "completeness_percentage": 100.0,
+      "average_latency_seconds": 4.766,
+      "average_tokens": 890.786,
+      "total_tokens": 24942,
+      "total_estimated_cost_usd": 0.00420975
+    }
+  },
+  "delta_v2_minus_v1": {
+    "retrieval_success_rate": 28.0,
+    "answer_success_rate": 28.0,
+    "faithfulness_percentage": null,
+    "relevance_percentage": null,
+    "completeness_percentage": null,
+    "average_latency_seconds": -1.097,
+    "average_tokens": null,
+    "total_tokens": 24942,
+    "total_estimated_cost_usd": 0.0042
+  },
+  "generated_at": "2026-09-26 04:15:33"
+}

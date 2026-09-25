@@ -1,0 +1,4022 @@
+[
+  {
+    "id": "1",
+    "question": "What is the minimum attendance requirement?",
+    "reference_answer": "75% attendance is required in each registered course.",
+    "candidate_answer": "The minimum attendance requirement is 75% in each registered course ([Source 1: 01_Attendance_Policy.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.2944
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.6713
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6965
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.7405
+        },
+        {
+          "source": "Object Detection.pdf",
+          "page": 10,
+          "distance": 0.7607
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 2.01,
+      "tokens": 861,
+      "estimated_cost_usd": 0.00014355
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately provides the 75% requirement per course, matching the reference answer completely."
+    }
+  },
+  {
+    "id": "2",
+    "question": "Can a student below 75% attendance be detained from the end-semester examination?",
+    "reference_answer": "Yes. Students below the threshold may be detained unless an approved relaxation applies.",
+    "candidate_answer": "Yes, students with attendance below the 75% minimum requirement in each registered course may be detained from the end-semester examination unless an approved relaxation applies ([Source 1: 01_Attendance_Policy.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.306
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.5396
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.5454
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.6579
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6849
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.14,
+      "tokens": 905,
+      "estimated_cost_usd": 0.00015825
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately reflects the reference answer, is fully faithful to the source, directly answers the question, and provides all necessary context."
+    }
+  },
+  {
+    "id": "3",
+    "question": "Where should attendance-related queries be directed?",
+    "reference_answer": "The department office.",
+    "candidate_answer": "Students should contact the department office with their registration number and supporting documents for attendance-related queries (Source 1: 01_Attendance_Policy.pdf, page 1).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.3984
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.6708
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6717
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6817
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.8
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.01,
+      "tokens": 883,
+      "estimated_cost_usd": 0.0001491
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer correctly identifies the department office as the point of contact, while adding helpful context from the source without contradicting the reference answer."
+    }
+  },
+  {
+    "id": "4",
+    "question": "What document should be provided for an attendance query?",
+    "reference_answer": "The student should provide their registration number and supporting documents.",
+    "candidate_answer": "To submit an attendance-related query, students should provide their registration number and supporting documents.\n\n* **Source:** 01_Attendance_Policy.pdf, page 1",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.3953
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.5689
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6094
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6104
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7762
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.11,
+      "tokens": 883,
+      "estimated_cost_usd": 0.00014865
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately states that the registration number and supporting documents should be provided, perfectly matching the reference answer."
+    }
+  },
+  {
+    "id": "5",
+    "question": "Who publishes the detailed examination timetable?",
+    "reference_answer": "The examination office.",
+    "candidate_answer": "The detailed examination timetable is released by the examination office (Source 1, page 1).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.3538
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.4103
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.6886
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.6934
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7733
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.92,
+      "tokens": 863,
+      "estimated_cost_usd": 0.000138
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and directly states that the examination office publishes the timetable, matching the reference answer fully."
+    }
+  },
+  {
+    "id": "6",
+    "question": "When are end-semester examinations conducted?",
+    "reference_answer": "According to the academic calendar published by the institution.",
+    "candidate_answer": "End-semester examinations are conducted according to the academic calendar published by the institution ([Source 2: 04_Academic_Calendar.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.1507
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.3528
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.5645
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.603
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7531
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.91,
+      "tokens": 879,
+      "estimated_cost_usd": 0.00014715
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and completely answers the question, matching the reference answer while including the proper source citation."
+    }
+  },
+  {
+    "id": "7",
+    "question": "Is late examination registration possible?",
+    "reference_answer": "Late registration is subject to the rules and fees notified by the examination office.",
+    "candidate_answer": "Yes, late examination registration is possible, but it is subject to the rules and fees notified by the examination office ([Source 1: 02_Examination_Schedule.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.4328
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.4835
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.5641
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6632
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7808
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.02,
+      "tokens": 884,
+      "estimated_cost_usd": 0.00015105
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately addresses the question, provides complete information consistent with the reference answer, and correctly cites its source."
+    }
+  },
+  {
+    "id": "8",
+    "question": "What must students complete before an examination?",
+    "reference_answer": "They must complete examination registration within the announced registration window.",
+    "candidate_answer": "Based on the provided documents, students must complete examination registration within the announced registration window. \n\n* **Source:** 02_Examination_Schedule.pdf, page 1",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.4554
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.5357
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.5471
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6076
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.8385
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.03,
+      "tokens": 881,
+      "estimated_cost_usd": 0.00014835
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and completely states that students must complete examination registration within the announced registration window, directly addressing the question with correct information."
+    }
+  },
+  {
+    "id": "9",
+    "question": "How are tuition fees determined?",
+    "reference_answer": "They are based on the fee notice for the applicable semester and may vary by programme and batch.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 27.595388383s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '27s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.95,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 26.090949789s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '26s'}]}}"
+    }
+  },
+  {
+    "id": "10",
+    "question": "Who handles fee-related questions?",
+    "reference_answer": "The accounts office through the official institutional channel.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 20.147293216s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '20s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.83,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 18.480554312s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}"
+    }
+  },
+  {
+    "id": "11",
+    "question": "What does the academic calendar specify?",
+    "reference_answer": "Teaching days, registration periods, internal assessments, holidays, and end-semester examinations.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 12.56778224s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '12s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.83,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 11.240916902s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}"
+    }
+  },
+  {
+    "id": "12",
+    "question": "What should students do when calendar dates change?",
+    "reference_answer": "Follow the revised schedule communicated through official notices.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 5.404695s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '5s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.94,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 3.956334613s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '3s'}]}}"
+    }
+  },
+  {
+    "id": "13",
+    "question": "When must semester registration be completed?",
+    "reference_answer": "Within the notified registration period.",
+    "candidate_answer": "Students must complete semester registration within the notified period. \n\n* Source: 05_Student_Registration.pdf, page 1",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.2707
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.3168
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.3721
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.4782
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.6639
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 6.49,
+      "tokens": 872,
+      "estimated_cost_usd": 0.0001434
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately conveys the information from the reference answer, stating that registration must be completed within the notified period."
+    }
+  },
+  {
+    "id": "14",
+    "question": "What should students verify during registration?",
+    "reference_answer": "They should verify their course selections before final submission.",
+    "candidate_answer": "Students must verify their course selections before final submission ([Source 1: 05_Student_Registration.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.2523
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.5337
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.5337
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6108
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7584
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.01,
+      "tokens": 872,
+      "estimated_cost_usd": 0.0001434
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and completely conveys the information from the reference answer, confirming what students must verify during registration."
+    }
+  },
+  {
+    "id": "15",
+    "question": "Who should students contact for registration problems?",
+    "reference_answer": "The academic office.",
+    "candidate_answer": "For registration problems, students should contact the academic office and provide their student identification details and a description of the issue. ([Source 1: 05_Student_Registration.pdf, page 1])",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.2588
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.524
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6205
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.717
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7444
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.02,
+      "tokens": 887,
+      "estimated_cost_usd": 0.00015195
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer directly and accurately states that students should contact the academic office for registration problems, while providing additional helpful context from the source."
+    }
+  },
+  {
+    "id": "16",
+    "question": "What information helps with a registration problem?",
+    "reference_answer": "Student identification details and a description of the issue.",
+    "candidate_answer": "To get help with a registration problem, students should contact the academic office and provide:\n* Their student identification details\n* A description of the issue\n\n([Source 1: 05_Student_Registration.pdf, page 1])",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.438
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.6922
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.7086
+        },
+        {
+          "source": "Object Detection.pdf",
+          "page": 8,
+          "distance": 0.8422
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.8441
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.27,
+      "tokens": 942,
+      "estimated_cost_usd": 0.0001638
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately identifies the required information (student ID and issue description) while also adding helpful context (contacting the academic office) without contradicting the reference."
+    }
+  },
+  {
+    "id": "17",
+    "question": "What is the minimum attendance requirement?",
+    "reference_answer": "75% attendance is required in each registered course.",
+    "candidate_answer": "The minimum attendance requirement is 75% in each registered course. \n\nSource: 01_Attendance_Policy.pdf, page 1",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.2944
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.6713
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6965
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.7405
+        },
+        {
+          "source": "Object Detection.pdf",
+          "page": 10,
+          "distance": 0.7607
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.01,
+      "tokens": 860,
+      "estimated_cost_usd": 0.00014295
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer directly and fully provides the correct minimum attendance requirement of 75% in each registered course, matching the reference answer."
+    }
+  },
+  {
+    "id": "18",
+    "question": "Can a student below 75% attendance be detained from the end-semester examination?",
+    "reference_answer": "Yes. Students below the threshold may be detained unless an approved relaxation applies.",
+    "candidate_answer": "Yes, students with attendance below the 75% threshold may be detained from the end-semester examination unless an approved relaxation applies [Source 1: 01_Attendance_Policy.pdf, page 1].",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.306
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.5396
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.5454
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.6579
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6849
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.9,
+      "tokens": 900,
+      "estimated_cost_usd": 0.00015525
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately mirrors the reference answer, directly addressing the question with complete and faithful information."
+    }
+  },
+  {
+    "id": "19",
+    "question": "Where should attendance-related queries be directed?",
+    "reference_answer": "The department office.",
+    "candidate_answer": "Students should contact the department office with their registration number and supporting documents for attendance-related queries (01_Attendance_Policy.pdf, page 1).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.3984
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.6708
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6717
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6817
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.8
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.91,
+      "tokens": 878,
+      "estimated_cost_usd": 0.0001461
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer correctly identifies that queries should be directed to the department office, while also providing helpful context and details found in the source document."
+    }
+  },
+  {
+    "id": "20",
+    "question": "What document should be provided for an attendance query?",
+    "reference_answer": "The student should provide their registration number and supporting documents.",
+    "candidate_answer": "For attendance-related queries, students should provide their registration number and supporting documents. \n\n*(Source: 01_Attendance_Policy.pdf, page 1)*",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.3953
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.5689
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6094
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6104
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7762
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.27,
+      "tokens": 882,
+      "estimated_cost_usd": 0.00014805
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer directly and accurately provides the required information, matching the reference answer."
+    }
+  },
+  {
+    "id": "21",
+    "question": "Who publishes the detailed examination timetable?",
+    "reference_answer": "The examination office.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 28.022233872s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '28s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.73,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 26.694566243s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '26s'}]}}"
+    }
+  },
+  {
+    "id": "22",
+    "question": "When are end-semester examinations conducted?",
+    "reference_answer": "According to the academic calendar published by the institution.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 20.958354468s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '20s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.74,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 19.188340693s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '19s'}]}}"
+    }
+  },
+  {
+    "id": "23",
+    "question": "Is late examination registration possible?",
+    "reference_answer": "Late registration is subject to the rules and fees notified by the examination office.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 13.386764869s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '13s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.74,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 12.043984597s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '12s'}]}}"
+    }
+  },
+  {
+    "id": "24",
+    "question": "What must students complete before an examination?",
+    "reference_answer": "They must complete examination registration within the announced registration window.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 6.118843002s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '6s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.86,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 4.684971514s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '4s'}]}}"
+    }
+  },
+  {
+    "id": "25",
+    "question": "How are tuition fees determined?",
+    "reference_answer": "They are based on the fee notice for the applicable semester and may vary by programme and batch.",
+    "candidate_answer": "Tuition and institutional fees are payable according to the fee notice issued for the applicable semester, and the exact amount may vary by programme and batch ([Source 1: 03_Fee_Structure.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.3361
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6189
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.666
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6735
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.7221
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 6.55,
+      "tokens": 890,
+      "estimated_cost_usd": 0.00015465
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately conveys all the information present in the reference answer regarding how tuition fees are determined, supported by the source document."
+    }
+  },
+  {
+    "id": "26",
+    "question": "Who handles fee-related questions?",
+    "reference_answer": "The accounts office through the official institutional channel.",
+    "candidate_answer": "Students with fee-related questions should contact the accounts office through the official institutional channel ([Source 1: 03_Fee_Structure.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.5264
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.8233
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.8289
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.8457
+        },
+        {
+          "source": "Tensor Processing Unit-note.pdf",
+          "page": 1,
+          "distance": 0.8517
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.91,
+      "tokens": 1045,
+      "estimated_cost_usd": 0.0001725
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and completely identifies the accounts office through the official institutional channel as the entity handling fee-related questions, matching the reference answer."
+    }
+  },
+  {
+    "id": "27",
+    "question": "What does the academic calendar specify?",
+    "reference_answer": "Teaching days, registration periods, internal assessments, holidays, and end-semester examinations.",
+    "candidate_answer": "The academic calendar specifies:\n* Teaching days\n* Registration periods\n* Internal assessments\n* Holidays\n* End-semester examinations\n\n*(Source: 04_Academic_Calendar.pdf, page 1)*",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.19
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.5259
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.7041
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.7277
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7928
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.11,
+      "tokens": 888,
+      "estimated_cost_usd": 0.000153
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer directly and completely covers all the points mentioned in the reference answer with 100% faithfulness."
+    }
+  },
+  {
+    "id": "28",
+    "question": "What should students do when calendar dates change?",
+    "reference_answer": "Follow the revised schedule communicated through official notices.",
+    "candidate_answer": "When dates change, the institution communicates the revised schedule through official notices ([Source 1: 04_Academic_Calendar.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.3232
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6248
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.6315
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.7771
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.8697
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.16,
+      "tokens": 878,
+      "estimated_cost_usd": 0.0001461
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately reflects the reference answer, stating that revised schedules are communicated through official notices, while also appropriately citing the source."
+    }
+  },
+  {
+    "id": "29",
+    "question": "When must semester registration be completed?",
+    "reference_answer": "Within the notified registration period.",
+    "candidate_answer": "Students must complete semester registration within the notified period ([Source 1: 05_Student_Registration.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.2707
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.3168
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.3721
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.4782
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.6639
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.9,
+      "tokens": 872,
+      "estimated_cost_usd": 0.0001434
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer directly and accurately answers the question based on the reference answer, including proper source attribution."
+    }
+  },
+  {
+    "id": "30",
+    "question": "What should students verify during registration?",
+    "reference_answer": "They should verify their course selections before final submission.",
+    "candidate_answer": "Students must verify their course selections before final submission ([Source 1: 05_Student_Registration.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.2523
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.5337
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.5337
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6108
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7584
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.01,
+      "tokens": 872,
+      "estimated_cost_usd": 0.0001434
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer directly, completely, and accurately answers the question based on the reference answer, while also including a source citation."
+    }
+  },
+  {
+    "id": "31",
+    "question": "Who should students contact for registration problems?",
+    "reference_answer": "The academic office.",
+    "candidate_answer": "For registration problems, students should contact the academic office and provide their student identification details and a description of the issue.\n\n* Source: `05_Student_Registration.pdf`, page 1",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.2588
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.524
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6205
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.717
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7444
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.01,
+      "tokens": 885,
+      "estimated_cost_usd": 0.00015075
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer correctly identifies the academic office as the contact point, directly answers the question, and provides reasonable, helpful additional details without contradicting the reference."
+    }
+  },
+  {
+    "id": "32",
+    "question": "What information helps with a registration problem?",
+    "reference_answer": "Student identification details and a description of the issue.",
+    "candidate_answer": "To get help with a registration problem, students should contact the academic office and provide:\n* Their student identification details\n* A description of the issue\n\n([Source 1: 05_Student_Registration.pdf, page 1])",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.438
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.6922
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.7086
+        },
+        {
+          "source": "Object Detection.pdf",
+          "page": 8,
+          "distance": 0.8422
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.8441
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.12,
+      "tokens": 942,
+      "estimated_cost_usd": 0.0001638
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately identifies the required information (student ID details and a description of the issue) and provides it clearly, matching the reference answer while adding relevant contextual details."
+    }
+  },
+  {
+    "id": "33",
+    "question": "What is the minimum attendance requirement?",
+    "reference_answer": "75% attendance is required in each registered course.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 27.414322605s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '27s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.97,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 25.762390989s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '25s'}]}}"
+    }
+  },
+  {
+    "id": "34",
+    "question": "Can a student below 75% attendance be detained from the end-semester examination?",
+    "reference_answer": "Yes. Students below the threshold may be detained unless an approved relaxation applies.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 19.941036009s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '19s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.84,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 18.417447888s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}"
+    }
+  },
+  {
+    "id": "35",
+    "question": "Where should attendance-related queries be directed?",
+    "reference_answer": "The department office.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 12.052814377s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '12s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 6.37,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 10.455109576s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '10s'}]}}"
+    }
+  },
+  {
+    "id": "36",
+    "question": "What document should be provided for an attendance query?",
+    "reference_answer": "The student should provide their registration number and supporting documents.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 4.584677428s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '4s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.83,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 2.871672247s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '2s'}]}}"
+    }
+  },
+  {
+    "id": "37",
+    "question": "Who publishes the detailed examination timetable?",
+    "reference_answer": "The examination office.",
+    "candidate_answer": "The detailed examination timetable is released by the examination office ([Source 1: 02_Examination_Schedule.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.3538
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.4103
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.6886
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.6934
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7733
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 6.84,
+      "tokens": 873,
+      "estimated_cost_usd": 0.000144
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and directly states that the examination office publishes the timetable, matching the reference answer fully."
+    }
+  },
+  {
+    "id": "38",
+    "question": "When are end-semester examinations conducted?",
+    "reference_answer": "According to the academic calendar published by the institution.",
+    "candidate_answer": "The end-semester examinations are conducted according to the academic calendar published by the institution ([Source 1: 02_Examination_Schedule.pdf, page 1]; [Source 2: 04_Academic_Calendar.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.1507
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.3528
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.5645
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.603
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7531
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.23,
+      "tokens": 899,
+      "estimated_cost_usd": 0.00015915
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and completely answers the question based on the reference, providing the exact same meaning with proper source citations."
+    }
+  },
+  {
+    "id": "39",
+    "question": "Is late examination registration possible?",
+    "reference_answer": "Late registration is subject to the rules and fees notified by the examination office.",
+    "candidate_answer": "Yes, late registration is possible, but it is subject to the rules and fees notified by the examination office ([Source 1: 02_Examination_Schedule.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.4328
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.4835
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.5641
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6632
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7808
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.93,
+      "tokens": 883,
+      "estimated_cost_usd": 0.00015045
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and completely answers the question while aligning with the reference answer and adding appropriate source attribution."
+    }
+  },
+  {
+    "id": "40",
+    "question": "What must students complete before an examination?",
+    "reference_answer": "They must complete examination registration within the announced registration window.",
+    "candidate_answer": "Based on the provided documents, students must complete examination registration within the announced registration window ([Source 1: 02_Examination_Schedule.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.4554
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.5357
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.5471
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6076
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.8385
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.99,
+      "tokens": 880,
+      "estimated_cost_usd": 0.00014775
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and fully addresses the question, matching the reference answer while citing the source."
+    }
+  },
+  {
+    "id": "41",
+    "question": "How are tuition fees determined?",
+    "reference_answer": "They are based on the fee notice for the applicable semester and may vary by programme and batch.",
+    "candidate_answer": "Tuition and institutional fees are payable according to the fee notice issued for the applicable semester, and the exact amount may vary by programme and batch ([Source 1: 03_Fee_Structure.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.3361
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6189
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.666
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6735
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.7221
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.09,
+      "tokens": 890,
+      "estimated_cost_usd": 0.00015465
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately conveys all the information present in the reference answer regarding how tuition fees are determined (based on the fee notice for the semester, varying by programme and batch), while also citing the source appropriately."
+    }
+  },
+  {
+    "id": "42",
+    "question": "Who handles fee-related questions?",
+    "reference_answer": "The accounts office through the official institutional channel.",
+    "candidate_answer": "Students with fee-related questions should contact the accounts office through the official institutional channel ([Source 1: 03_Fee_Structure.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.5264
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.8233
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.8289
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.8457
+        },
+        {
+          "source": "Tensor Processing Unit-note.pdf",
+          "page": 1,
+          "distance": 0.8517
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.91,
+      "tokens": 1045,
+      "estimated_cost_usd": 0.0001725
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer directly and accurately answers the question using the information from the reference answer, providing both the correct entity and the channel."
+    }
+  },
+  {
+    "id": "43",
+    "question": "What does the academic calendar specify?",
+    "reference_answer": "Teaching days, registration periods, internal assessments, holidays, and end-semester examinations.",
+    "candidate_answer": "The academic calendar specifies teaching days, registration periods, internal assessments, holidays, and end-semester examinations [Source 1: 04_Academic_Calendar.pdf, page 1].",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.19
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.5259
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.7041
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.7277
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7928
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.9,
+      "tokens": 883,
+      "estimated_cost_usd": 0.00015
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and completely captures all the points mentioned in the reference answer and directly answers the question without introducing any extraneous or contradictory information."
+    }
+  },
+  {
+    "id": "44",
+    "question": "What should students do when calendar dates change?",
+    "reference_answer": "Follow the revised schedule communicated through official notices.",
+    "candidate_answer": "If dates change, the institution communicates the revised schedule through official notices ([Source 1: 04_Academic_Calendar.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.3232
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6248
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.6315
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.7771
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.8697
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.91,
+      "tokens": 878,
+      "estimated_cost_usd": 0.0001461
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately reflects the reference answer, stating that revised schedules are communicated through official notices, while properly answering the question and providing sufficient detail."
+    }
+  },
+  {
+    "id": "45",
+    "question": "When must semester registration be completed?",
+    "reference_answer": "Within the notified registration period.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 26.796711887s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '26s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.73,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 25.561375502s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '25s'}]}}"
+    }
+  },
+  {
+    "id": "46",
+    "question": "What should students verify during registration?",
+    "reference_answer": "They should verify their course selections before final submission.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 19.830336902s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '19s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.74,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 18.285449661s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '18s'}]}}"
+    }
+  },
+  {
+    "id": "47",
+    "question": "Who should students contact for registration problems?",
+    "reference_answer": "The academic office.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 11.846468186s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 6.53,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 9.955976273s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '9s'}]}}"
+    }
+  },
+  {
+    "id": "48",
+    "question": "What information helps with a registration problem?",
+    "reference_answer": "Student identification details and a description of the issue.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 4.165692521s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '4s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.76,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 2.927333815s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '2s'}]}}"
+    }
+  },
+  {
+    "id": "49",
+    "question": "What is the minimum attendance requirement?",
+    "reference_answer": "75% attendance is required in each registered course.",
+    "candidate_answer": "The minimum attendance requirement is 75% in each registered course (Source 1, page 1).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.2944
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.6713
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6965
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.7405
+        },
+        {
+          "source": "Object Detection.pdf",
+          "page": 10,
+          "distance": 0.7607
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 6.93,
+      "tokens": 851,
+      "estimated_cost_usd": 0.00013755
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately provides the 75% requirement per course, matching the reference answer."
+    }
+  },
+  {
+    "id": "50",
+    "question": "Can a student below 75% attendance be detained from the end-semester examination?",
+    "reference_answer": "Yes. Students below the threshold may be detained unless an approved relaxation applies.",
+    "candidate_answer": "Yes, students with attendance below the 75% threshold may be detained from the end-semester examination unless an approved relaxation applies ([Source 1: 01_Attendance_Policy.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.306
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.5396
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.5454
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.6579
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6849
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.93,
+      "tokens": 900,
+      "estimated_cost_usd": 0.00015525
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer directly and accurately addresses the question, matches the reference answer completely, and includes proper source attribution."
+    }
+  },
+  {
+    "id": "51",
+    "question": "Where should attendance-related queries be directed?",
+    "reference_answer": "The department office.",
+    "candidate_answer": "Attendance-related queries should be directed to the department office, and students should include their registration number and supporting documents ([Source 1: 01_Attendance_Policy.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.3984
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.6708
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6717
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6817
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.8
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 2.61,
+      "tokens": 887,
+      "estimated_cost_usd": 0.0001515
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer directly and accurately answers the question using the information from the reference, while also providing helpful additional context from the source."
+    }
+  },
+  {
+    "id": "52",
+    "question": "What document should be provided for an attendance query?",
+    "reference_answer": "The student should provide their registration number and supporting documents.",
+    "candidate_answer": "Students should provide supporting documents for attendance-related queries (01_Attendance_Policy.pdf, page 1).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.3953
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.5689
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6094
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6104
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7762
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.17,
+      "tokens": 871,
+      "estimated_cost_usd": 0.00014145
+    },
+    "evaluation": {
+      "faithfulness": 1,
+      "relevance": 1,
+      "completeness": 1,
+      "reason": "The candidate answer mentions supporting documents but misses the registration number required by the reference answer, though it correctly identifies the need for supporting documents."
+    }
+  },
+  {
+    "id": "53",
+    "question": "Who publishes the detailed examination timetable?",
+    "reference_answer": "The examination office.",
+    "candidate_answer": "The detailed examination timetable is released by the examination office [Source 1: 02_Examination_Schedule.pdf, page 1].",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.3538
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.4103
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.6886
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.6934
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7733
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.93,
+      "tokens": 873,
+      "estimated_cost_usd": 0.000144
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer directly and accurately states that the examination office publishes the timetable, matching the reference answer."
+    }
+  },
+  {
+    "id": "54",
+    "question": "When are end-semester examinations conducted?",
+    "reference_answer": "According to the academic calendar published by the institution.",
+    "candidate_answer": "End-semester examinations are conducted according to the academic calendar published by the institution ([Source 2: 04_Academic_Calendar.pdf, page 1], [Source 1: 02_Examination_Schedule.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.1507
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.3528
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.5645
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.603
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7531
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.43,
+      "tokens": 898,
+      "estimated_cost_usd": 0.00015855
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately states that end-semester examinations are conducted according to the academic calendar, perfectly matching the reference answer."
+    }
+  },
+  {
+    "id": "55",
+    "question": "Is late examination registration possible?",
+    "reference_answer": "Late registration is subject to the rules and fees notified by the examination office.",
+    "candidate_answer": "Yes, late examination registration is possible, but it is subject to the rules and fees notified by the examination office ([Source 1: 02_Examination_Schedule.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.4328
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.4835
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.5641
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6632
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7808
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.9,
+      "tokens": 884,
+      "estimated_cost_usd": 0.00015105
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer directly and accurately addresses the question, matches the reference answer's meaning, and provides complete information based on the source."
+    }
+  },
+  {
+    "id": "56",
+    "question": "What must students complete before an examination?",
+    "reference_answer": "They must complete examination registration within the announced registration window.",
+    "candidate_answer": "Based on the provided documents, students must complete examination registration within the announced registration window ([Source 1: 02_Examination_Schedule.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.4554
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.5357
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.5471
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6076
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.8385
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.95,
+      "tokens": 880,
+      "estimated_cost_usd": 0.00014775
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and fully provides the required information, matching the reference answer."
+    }
+  },
+  {
+    "id": "57",
+    "question": "How are tuition fees determined?",
+    "reference_answer": "They are based on the fee notice for the applicable semester and may vary by programme and batch.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 22.071630087s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '22s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.85,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 20.627915357s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '20s'}]}}"
+    }
+  },
+  {
+    "id": "58",
+    "question": "Who handles fee-related questions?",
+    "reference_answer": "The accounts office through the official institutional channel.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 14.503118932s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '14s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 6.14,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 13.06791408s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '13s'}]}}"
+    }
+  },
+  {
+    "id": "59",
+    "question": "What does the academic calendar specify?",
+    "reference_answer": "Teaching days, registration periods, internal assessments, holidays, and end-semester examinations.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 5.888953573s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '5s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.83,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 4.243152276s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '4s'}]}}"
+    }
+  },
+  {
+    "id": "60",
+    "question": "What should students do when calendar dates change?",
+    "reference_answer": "Follow the revised schedule communicated through official notices.",
+    "candidate_answer": "When calendar dates change, the institution communicates the revised schedule through official notices [Source 1: 04_Academic_Calendar.pdf, page 1].",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.3232
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6248
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.6315
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.7771
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.8697
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 6.72,
+      "tokens": 879,
+      "estimated_cost_usd": 0.0001467
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately reflects the reference answer, explaining that revised schedules are communicated through official notices, while also properly answering and completing the question."
+    }
+  },
+  {
+    "id": "61",
+    "question": "When must semester registration be completed?",
+    "reference_answer": "Within the notified registration period.",
+    "candidate_answer": "Students must complete semester registration within the notified period ([Source 1: 05_Student_Registration.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.2707
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.3168
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.3721
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.4782
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.6639
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.8,
+      "tokens": 872,
+      "estimated_cost_usd": 0.0001434
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and completely answers the question using the information provided in the reference answer, and includes proper citation."
+    }
+  },
+  {
+    "id": "62",
+    "question": "What should students verify during registration?",
+    "reference_answer": "They should verify their course selections before final submission.",
+    "candidate_answer": "Students must verify their course selections before final submission ([Source 1: 05_Student_Registration.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.2523
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.5337
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.5337
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6108
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7584
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.94,
+      "tokens": 872,
+      "estimated_cost_usd": 0.0001434
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and completely conveys the information from the reference answer, confirming what students need to verify during registration."
+    }
+  },
+  {
+    "id": "63",
+    "question": "Who should students contact for registration problems?",
+    "reference_answer": "The academic office.",
+    "candidate_answer": "For registration problems, students should contact the academic office and provide their student identification details and a description of the issue.\n\n[Source 1: 05_Student_Registration.pdf, page 1]",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.2588
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.524
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6205
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.717
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7444
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.99,
+      "tokens": 888,
+      "estimated_cost_usd": 0.00015255
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer correctly identifies the academic office as the contact point, and adding details like student ID and description does not contradict the reference."
+    }
+  },
+  {
+    "id": "64",
+    "question": "What information helps with a registration problem?",
+    "reference_answer": "Student identification details and a description of the issue.",
+    "candidate_answer": "To get help with a registration problem, students should contact the academic office and provide:\n* Their student identification details\n* A description of the issue\n\n([Source 1: 05_Student_Registration.pdf, page 1])",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.438
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.6922
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.7086
+        },
+        {
+          "source": "Object Detection.pdf",
+          "page": 8,
+          "distance": 0.8422
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.8441
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.22,
+      "tokens": 942,
+      "estimated_cost_usd": 0.0001638
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately identifies the required information (student ID and issue description) and adds helpful context (contacting the academic office) without introducing any contradictions."
+    }
+  },
+  {
+    "id": "65",
+    "question": "What is the minimum attendance requirement?",
+    "reference_answer": "75% attendance is required in each registered course.",
+    "candidate_answer": "The minimum attendance requirement is 75% in each registered course (01_Attendance_Policy.pdf, page 1).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.2944
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.6713
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6965
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.7405
+        },
+        {
+          "source": "Object Detection.pdf",
+          "page": 10,
+          "distance": 0.7607
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.85,
+      "tokens": 856,
+      "estimated_cost_usd": 0.00014055
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer directly and accurately provides the minimum attendance requirement (75% in each registered course) based on the reference answer, including source attribution."
+    }
+  },
+  {
+    "id": "66",
+    "question": "Can a student below 75% attendance be detained from the end-semester examination?",
+    "reference_answer": "Yes. Students below the threshold may be detained unless an approved relaxation applies.",
+    "candidate_answer": "Yes, students with attendance below the 75% threshold may be detained from the end-semester examination unless an approved relaxation applies ([Source 1: 01_Attendance_Policy.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.306
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.5396
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.5454
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.6579
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6849
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.87,
+      "tokens": 900,
+      "estimated_cost_usd": 0.00015525
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer directly and accurately answers the question, fully matching the reference answer and including the citation."
+    }
+  },
+  {
+    "id": "67",
+    "question": "Where should attendance-related queries be directed?",
+    "reference_answer": "The department office.",
+    "candidate_answer": "Attendance-related queries should be directed to the department office, and students should include their registration number and supporting documents ([Source 1: 01_Attendance_Policy.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.3984
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.6708
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6717
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6817
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.8
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.11,
+      "tokens": 887,
+      "estimated_cost_usd": 0.0001515
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer correctly identifies the department office as the place to direct queries, while also providing helpful and accurate additional context from the source."
+    }
+  },
+  {
+    "id": "68",
+    "question": "What document should be provided for an attendance query?",
+    "reference_answer": "The student should provide their registration number and supporting documents.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 24.42028481s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '24s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.86,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 22.979769797s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '22s'}]}}"
+    }
+  },
+  {
+    "id": "69",
+    "question": "Who publishes the detailed examination timetable?",
+    "reference_answer": "The examination office.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 17.143153568s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '17s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.72,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 15.815716956s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '15s'}]}}"
+    }
+  },
+  {
+    "id": "70",
+    "question": "When are end-semester examinations conducted?",
+    "reference_answer": "According to the academic calendar published by the institution.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 9.27993943s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '9s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 6.4,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 7.941274263s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '7s'}]}}"
+    }
+  },
+  {
+    "id": "71",
+    "question": "Is late examination registration possible?",
+    "reference_answer": "Late registration is subject to the rules and fees notified by the examination office.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 1.986738894s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '1s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.95,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 651.067337ms.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '0s'}]}}"
+    }
+  },
+  {
+    "id": "72",
+    "question": "What must students complete before an examination?",
+    "reference_answer": "They must complete examination registration within the announced registration window.",
+    "candidate_answer": "Based on the provided documents, students must complete examination registration within the announced registration window ([Source 1: 02_Examination_Schedule.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.4554
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.5357
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.5471
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6076
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.8385
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 7.25,
+      "tokens": 880,
+      "estimated_cost_usd": 0.00014775
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and fully addresses the question, matching the reference answer while citing the source."
+    }
+  },
+  {
+    "id": "73",
+    "question": "How are tuition fees determined?",
+    "reference_answer": "They are based on the fee notice for the applicable semester and may vary by programme and batch.",
+    "candidate_answer": "Tuition and institutional fees are payable according to the fee notice issued for the applicable semester, and the exact amount may vary by programme and batch ([Source 1: 03_Fee_Structure.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.3361
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6189
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.666
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6735
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.7221
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.99,
+      "tokens": 890,
+      "estimated_cost_usd": 0.00015465
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and completely captures the information provided in the reference answer, explaining that fees are determined by the fee notice for the applicable semester and vary by programme and batch."
+    }
+  },
+  {
+    "id": "74",
+    "question": "Who handles fee-related questions?",
+    "reference_answer": "The accounts office through the official institutional channel.",
+    "candidate_answer": "Students with fee-related questions should contact the accounts office through the official institutional channel ([Source 1: 03_Fee_Structure.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.5264
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.8233
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.8289
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.8457
+        },
+        {
+          "source": "Tensor Processing Unit-note.pdf",
+          "page": 1,
+          "distance": 0.8517
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.52,
+      "tokens": 1045,
+      "estimated_cost_usd": 0.0001725
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and completely states that the accounts office handles fee-related questions through the official institutional channel, directly matching the reference answer."
+    }
+  },
+  {
+    "id": "75",
+    "question": "What does the academic calendar specify?",
+    "reference_answer": "Teaching days, registration periods, internal assessments, holidays, and end-semester examinations.",
+    "candidate_answer": "The academic calendar specifies:\n* Teaching days\n* Registration periods\n* Internal assessments\n* Holidays\n* End-semester examinations\n\n*(Source: 04_Academic_Calendar.pdf, page 1)*",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.19
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.5259
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.7041
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.7277
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7928
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.08,
+      "tokens": 888,
+      "estimated_cost_usd": 0.000153
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and completely lists all the items specified in the reference answer."
+    }
+  },
+  {
+    "id": "76",
+    "question": "What should students do when calendar dates change?",
+    "reference_answer": "Follow the revised schedule communicated through official notices.",
+    "candidate_answer": "When calendar dates change, the institution communicates the revised schedule through official notices [Source 1: 04_Academic_Calendar.pdf, page 1].",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.3232
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6248
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.6315
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.7771
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.8697
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.89,
+      "tokens": 879,
+      "estimated_cost_usd": 0.0001467
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately reflects the reference answer, is fully faithful to the source, directly answers the question, and provides complete information."
+    }
+  },
+  {
+    "id": "77",
+    "question": "When must semester registration be completed?",
+    "reference_answer": "Within the notified registration period.",
+    "candidate_answer": "Students must complete semester registration within the notified period. \n\n* Source: `05_Student_Registration.pdf`, page 1",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.2707
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.3168
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.3721
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.4782
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.6639
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.98,
+      "tokens": 872,
+      "estimated_cost_usd": 0.0001434
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and completely conveys the information in the reference answer, matching the requirement to complete registration within the notified period."
+    }
+  },
+  {
+    "id": "78",
+    "question": "What should students verify during registration?",
+    "reference_answer": "They should verify their course selections before final submission.",
+    "candidate_answer": "During registration, students must verify their course selections before final submission (Source 1, page 1).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.2523
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.5337
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.5337
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6108
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7584
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.91,
+      "tokens": 865,
+      "estimated_cost_usd": 0.0001392
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer directly and accurately answers the question based on the reference, with full faithfulness and completeness."
+    }
+  },
+  {
+    "id": "79",
+    "question": "Who should students contact for registration problems?",
+    "reference_answer": "The academic office.",
+    "candidate_answer": "For registration problems, students should contact the academic office and provide their student identification details and a description of the issue ([Source 1: 05_Student_Registration.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.2588
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.524
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6205
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.717
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7444
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.11,
+      "tokens": 886,
+      "estimated_cost_usd": 0.00015135
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer directly and correctly identifies that students should contact the academic office, while adding minor helpful context from the source without contradicting the reference."
+    }
+  },
+  {
+    "id": "80",
+    "question": "What information helps with a registration problem?",
+    "reference_answer": "Student identification details and a description of the issue.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 23.611318747s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '23s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.94,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 21.862116932s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '21s'}]}}"
+    }
+  },
+  {
+    "id": "81",
+    "question": "What is the minimum attendance requirement?",
+    "reference_answer": "75% attendance is required in each registered course.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 14.701230606s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '14s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 7.18,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 13.374919667s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '13s'}]}}"
+    }
+  },
+  {
+    "id": "82",
+    "question": "Can a student below 75% attendance be detained from the end-semester examination?",
+    "reference_answer": "Yes. Students below the threshold may be detained unless an approved relaxation applies.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 7.113305121s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '7s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 6.4,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 5.458309099s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '5s'}]}}"
+    }
+  },
+  {
+    "id": "83",
+    "question": "Where should attendance-related queries be directed?",
+    "reference_answer": "The department office.",
+    "candidate_answer": "Students should contact the department office with their registration number and supporting documents for attendance-related queries.\n\n*Source: 01_Attendance_Policy.pdf, page 1*",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.3984
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.6708
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6717
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6817
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.8
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 7.56,
+      "tokens": 883,
+      "estimated_cost_usd": 0.0001491
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer directly and correctly states that attendance-related queries should be directed to the department office, while adding helpful context from the policy."
+    }
+  },
+  {
+    "id": "84",
+    "question": "What document should be provided for an attendance query?",
+    "reference_answer": "The student should provide their registration number and supporting documents.",
+    "candidate_answer": "To address an attendance query, students should provide their supporting documents along with their registration number when contacting the department office. \n\n* **Source:** 01_Attendance_Policy.pdf, page 1",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.3953
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.5689
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6094
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6104
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7762
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.94,
+      "tokens": 889,
+      "estimated_cost_usd": 0.00015225
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately includes all information from the reference answer (registration number and supporting documents) while providing clear context."
+    }
+  },
+  {
+    "id": "85",
+    "question": "Who publishes the detailed examination timetable?",
+    "reference_answer": "The examination office.",
+    "candidate_answer": "The detailed examination timetable is released by the examination office [Source 1: 02_Examination_Schedule.pdf, page 1].",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.3538
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.4103
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.6886
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.6934
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7733
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.9,
+      "tokens": 873,
+      "estimated_cost_usd": 0.000144
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer directly and accurately identifies the examination office as the publisher of the timetable, matching the reference answer fully."
+    }
+  },
+  {
+    "id": "86",
+    "question": "When are end-semester examinations conducted?",
+    "reference_answer": "According to the academic calendar published by the institution.",
+    "candidate_answer": "End-semester examinations are conducted according to the academic calendar published by the institution ([Source 2: 04_Academic_Calendar.pdf, page 1], [Source 1: 02_Examination_Schedule.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.1507
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.3528
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.5645
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.603
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7531
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.91,
+      "tokens": 898,
+      "estimated_cost_usd": 0.00015855
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately matches the reference answer while citing appropriate sources."
+    }
+  },
+  {
+    "id": "87",
+    "question": "Is late examination registration possible?",
+    "reference_answer": "Late registration is subject to the rules and fees notified by the examination office.",
+    "candidate_answer": "Yes, late examination registration is possible, but it is subject to the rules and fees notified by the examination office ([Source 1: 02_Examination_Schedule.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.4328
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.4835
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.5641
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6632
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7808
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.05,
+      "tokens": 884,
+      "estimated_cost_usd": 0.00015105
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer directly and fully addresses the question, accurately reflecting the reference answer while incorporating proper context."
+    }
+  },
+  {
+    "id": "88",
+    "question": "What must students complete before an examination?",
+    "reference_answer": "They must complete examination registration within the announced registration window.",
+    "candidate_answer": "Based on the provided documents, students must complete **examination registration** within the announced registration window before an examination ([Source 1: 02_Examination_Schedule.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.4554
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.5357
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.5471
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6076
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.8385
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.9,
+      "tokens": 885,
+      "estimated_cost_usd": 0.00015075
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and completely provides the required information found in the reference answer, citing the appropriate source without inventing anything."
+    }
+  },
+  {
+    "id": "89",
+    "question": "How are tuition fees determined?",
+    "reference_answer": "They are based on the fee notice for the applicable semester and may vary by programme and batch.",
+    "candidate_answer": "Tuition and institutional fees are payable according to the fee notice issued for the applicable semester, and the exact amount may vary by programme and batch ([Source 1: 03_Fee_Structure.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.3361
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6189
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.666
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6735
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.7221
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.1,
+      "tokens": 890,
+      "estimated_cost_usd": 0.00015465
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and completely captures the information provided in the reference answer regarding how tuition fees are determined."
+    }
+  },
+  {
+    "id": "90",
+    "question": "Who handles fee-related questions?",
+    "reference_answer": "The accounts office through the official institutional channel.",
+    "candidate_answer": "Students with fee-related questions should contact the accounts office through the official institutional channel ([Source 1: 03_Fee_Structure.pdf, page 1]).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.5264
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.8233
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.8289
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.8457
+        },
+        {
+          "source": "Tensor Processing Unit-note.pdf",
+          "page": 1,
+          "distance": 0.8517
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.97,
+      "tokens": 1045,
+      "estimated_cost_usd": 0.0001725
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately identifies the accounts office and the official institutional channel as the handlers of fee-related questions, matching the reference answer completely and directly."
+    }
+  },
+  {
+    "id": "91",
+    "question": "What does the academic calendar specify?",
+    "reference_answer": "Teaching days, registration periods, internal assessments, holidays, and end-semester examinations.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 28.50373838s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '28s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 6.56,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 26.583594251s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '26s'}]}}"
+    }
+  },
+  {
+    "id": "92",
+    "question": "What should students do when calendar dates change?",
+    "reference_answer": "Follow the revised schedule communicated through official notices.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 20.829093297s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '20s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 5.75,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 19.362009347s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '19s'}]}}"
+    }
+  },
+  {
+    "id": "93",
+    "question": "When must semester registration be completed?",
+    "reference_answer": "Within the notified registration period.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 13.243631172s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '13s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 6.13,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 11.197071591s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '11s'}]}}"
+    }
+  },
+  {
+    "id": "94",
+    "question": "What should students verify during registration?",
+    "reference_answer": "They should verify their course selections before final submission.",
+    "candidate_answer": "RAG execution failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 3.207005764s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-3.5-flash-lite'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '3s'}]}}",
+    "retrieval": {
+      "success": false,
+      "source_count": 0,
+      "sources": []
+    },
+    "performance": {
+      "latency_seconds": 6.04,
+      "tokens": 0,
+      "estimated_cost_usd": 0.0
+    },
+    "evaluation": {
+      "faithfulness": null,
+      "relevance": null,
+      "completeness": null,
+      "reason": "judge unavailable: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 1.862559512s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.5-flash-lite', 'location': 'global'}, 'quotaValue': '15'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '1s'}]}}"
+    }
+  },
+  {
+    "id": "95",
+    "question": "Who should students contact for registration problems?",
+    "reference_answer": "The academic office.",
+    "candidate_answer": "Students should contact the academic office and provide their student identification details and a description of the issue.\n\n* **Source:** 05_Student_Registration.pdf, page 1",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.2588
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.524
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6205
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.717
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7444
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 6.65,
+      "tokens": 882,
+      "estimated_cost_usd": 0.00014895
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer correctly identifies the academic office as the contact point and adds helpful, contextually logical details without contradicting the reference answer."
+    }
+  },
+  {
+    "id": "96",
+    "question": "What information helps with a registration problem?",
+    "reference_answer": "Student identification details and a description of the issue.",
+    "candidate_answer": "To get help with a registration problem, students should contact the academic office and provide:\n* Their student identification details\n* A description of the issue\n\n([Source 1: 05_Student_Registration.pdf, page 1])",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.438
+        },
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.6922
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.7086
+        },
+        {
+          "source": "Object Detection.pdf",
+          "page": 8,
+          "distance": 0.8422
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.8441
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.01,
+      "tokens": 942,
+      "estimated_cost_usd": 0.0001638
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and completely provides the information needed for a registration problem, matching the reference answer while adding helpful context (contacting the academic office)."
+    }
+  },
+  {
+    "id": "97",
+    "question": "What is the minimum attendance requirement?",
+    "reference_answer": "75% attendance is required in each registered course.",
+    "candidate_answer": "The minimum attendance requirement is 75% in each registered course (01_Attendance_Policy.pdf, page 1).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.2944
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.6713
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6965
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.7405
+        },
+        {
+          "source": "Object Detection.pdf",
+          "page": 10,
+          "distance": 0.7607
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 0.92,
+      "tokens": 856,
+      "estimated_cost_usd": 0.00014055
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and completely provides the minimum attendance requirement (75% in each registered course) as stated in the reference answer."
+    }
+  },
+  {
+    "id": "98",
+    "question": "Can a student below 75% attendance be detained from the end-semester examination?",
+    "reference_answer": "Yes. Students below the threshold may be detained unless an approved relaxation applies.",
+    "candidate_answer": "Yes, students below the 75% minimum attendance threshold in each registered course may be detained from the end-semester examination unless an approved relaxation applies [Source 1: 01_Attendance_Policy.pdf, page 1].",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.306
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.5396
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.5454
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.6579
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6849
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.11,
+      "tokens": 904,
+      "estimated_cost_usd": 0.00015765
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately addresses the question, provides correct information matching the reference, and includes precise contextual details without inventing facts."
+    }
+  },
+  {
+    "id": "99",
+    "question": "Where should attendance-related queries be directed?",
+    "reference_answer": "The department office.",
+    "candidate_answer": "Students should contact the department office with their registration number and supporting documents for attendance-related queries (Source 1: 01_Attendance_Policy.pdf, page 1).",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.3984
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.6708
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6717
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6817
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.8
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.01,
+      "tokens": 883,
+      "estimated_cost_usd": 0.0001491
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer correctly identifies the department office as the contact point, while also providing helpful context directly supported by the source document."
+    }
+  },
+  {
+    "id": "100",
+    "question": "What document should be provided for an attendance query?",
+    "reference_answer": "The student should provide their registration number and supporting documents.",
+    "candidate_answer": "To address an attendance query, students should provide their supporting documents along with their registration number when contacting the department office.\n\n* **Source:** `01_Attendance_Policy.pdf`, page 1",
+    "retrieval": {
+      "success": true,
+      "source_count": 5,
+      "sources": [
+        {
+          "source": "01_Attendance_Policy.pdf",
+          "page": 1,
+          "distance": 0.3953
+        },
+        {
+          "source": "05_Student_Registration.pdf",
+          "page": 1,
+          "distance": 0.5689
+        },
+        {
+          "source": "04_Academic_Calendar.pdf",
+          "page": 1,
+          "distance": 0.6094
+        },
+        {
+          "source": "02_Examination_Schedule.pdf",
+          "page": 1,
+          "distance": 0.6104
+        },
+        {
+          "source": "03_Fee_Structure.pdf",
+          "page": 1,
+          "distance": 0.7762
+        }
+      ]
+    },
+    "performance": {
+      "latency_seconds": 1.22,
+      "tokens": 888,
+      "estimated_cost_usd": 0.00015165
+    },
+    "evaluation": {
+      "faithfulness": 2,
+      "relevance": 2,
+      "completeness": 2,
+      "reason": "The candidate answer accurately and completely conveys the information from the reference answer, specifying both the registration number and supporting documents."
+    }
+  }
+]
