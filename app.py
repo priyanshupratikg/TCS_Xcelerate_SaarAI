@@ -2,6 +2,7 @@ import streamlit as st
 from pathlib import Path
 import pandas as pd
 import json
+import os
 
 from rag import RAGSystem
 from ingest import index_paths, USER_DOC_DIR
@@ -26,6 +27,8 @@ BASE_DOC_DIR = Path("data/documents")
 EVAL_SUMMARY = Path("evaluation/summary.json")
 EVAL_RESULTS = Path("evaluation/results.json")
 USAGE_LOG = Path("logs/usage.jsonl")
+
+MAX_QUERY_COST_USD = float(os.getenv("SAARAI_MAX_QUERY_COST_USD", "0.01"))
 
 
 # ============================================================
@@ -489,7 +492,7 @@ with tab_dashboard:
                     "Prompt Version",
                     evaluation.get(
                         "prompt_version",
-                        rag.prompt_version
+                        "v1"
                     )
                 )
 
@@ -544,7 +547,7 @@ with tab_dashboard:
             with p2:
 
                 st.metric(
-                    "Avg Tokens / Question",
+                    "Avg Tokens",
                     f"{performance.get('average_tokens', 0):,.0f}"
                 )
 
@@ -676,6 +679,87 @@ with tab_dashboard:
         )
 
     # --------------------------------------------------------
+    # DAILY COST GOVERNANCE
+    # --------------------------------------------------------
+
+    st.markdown(
+        "### 💰 Daily Cost Governance"
+    )
+
+    st.caption(
+        "Runtime expenditure based on recorded SaarAI query telemetry."
+    )
+
+    if USAGE_LOG.exists():
+
+        try:
+            cost_rows = [
+                json.loads(x)
+                for x in USAGE_LOG.read_text(encoding="utf-8").splitlines()
+                if x.strip()
+            ]
+
+            if cost_rows:
+                cost_df = pd.DataFrame(cost_rows)
+                cost_df["timestamp"] = pd.to_datetime(
+                    cost_df["ts"], unit="s", errors="coerce"
+                )
+                cost_df["date"] = cost_df["timestamp"].dt.date
+                cost_df["estimated_cost_usd"] = pd.to_numeric(
+                    cost_df["estimated_cost_usd"], errors="coerce"
+                ).fillna(0)
+
+                daily_cost = (
+                    cost_df.groupby("date")["estimated_cost_usd"]
+                    .sum()
+                    .reset_index()
+                )
+
+                today = pd.Timestamp.now().date()
+                today_cost = float(
+                    daily_cost.loc[
+                        daily_cost["date"] == today,
+                        "estimated_cost_usd"
+                    ].sum()
+                )
+
+                c1, c2, c3 = st.columns(3)
+
+                with c1:
+                    st.metric(
+                        "Today's Expenditure",
+                        f"${today_cost:.8f}"
+                    )
+
+                with c2:
+                    st.metric(
+                        "Per-Query Cost Limit",
+                        f"${MAX_QUERY_COST_USD:.4f}"
+                    )
+
+                with c3:
+                    st.metric(
+                        "Queries Logged Today",
+                        int((cost_df["date"] == today).sum())
+                    )
+
+                daily_chart = daily_cost.copy()
+                daily_chart["date"] = daily_chart["date"].astype(str)
+                st.line_chart(
+                    daily_chart.set_index("date")["estimated_cost_usd"]
+                )
+
+            else:
+                st.info("No runtime cost data yet.")
+
+        except Exception as e:
+            st.warning("Could not load daily cost telemetry.")
+            st.exception(e)
+
+    else:
+        st.info("No runtime cost data yet.")
+
+    # --------------------------------------------------------
     # SYSTEM CONFIGURATION
     # --------------------------------------------------------
 
@@ -780,7 +864,10 @@ with tab_guardrails:
                 "Cost estimation",
                 "Latency tracking",
                 "Prompt versioning",
-                "Evaluation harness"
+                "Evaluation harness",
+                "Per-query cost limit",
+                "Maximum output token limit",
+                "Daily expenditure tracking"
             ],
             "Status": [
                 "Active",
@@ -790,7 +877,10 @@ with tab_guardrails:
                 "Active",
                 "Active",
                 "v1",
-                "100 questions"
+                "100 questions",
+                f"${MAX_QUERY_COST_USD:.4f}",
+                "600 tokens",
+                "Active"
             ]
         }
     )

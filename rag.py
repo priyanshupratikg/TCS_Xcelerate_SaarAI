@@ -8,6 +8,7 @@ from sentence_transformers import SentenceTransformer
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
+from langfuse import get_client, observe
 
 
 # ============================================================
@@ -15,6 +16,12 @@ from google.genai import types
 # ============================================================
 
 load_dotenv()
+
+# Langfuse observability
+# The client reads LANGFUSE_PUBLIC_KEY, LANGFUSE_SECRET_KEY,
+# LANGFUSE_BASE_URL and LANGFUSE_TRACING_ENVIRONMENT from .env
+# or Streamlit Cloud Secrets.
+langfuse = get_client()
 
 
 # ============================================================
@@ -35,6 +42,20 @@ MAX_RELEVANCE_DISTANCE = 0.90
 
 # Gemini retry configuration
 MAX_RETRIES = 3
+
+# LLMOps governance limits
+# These can be overridden through environment variables.
+MAX_OUTPUT_TOKENS = int(
+    os.getenv("SAARAI_MAX_OUTPUT_TOKENS", "600")
+)
+
+MAX_QUERY_COST_USD = float(
+    os.getenv("SAARAI_MAX_QUERY_COST_USD", "0.01")
+)
+
+# Approximate token estimation used before generation.
+# Actual Gemini usage is recorded after generation.
+CHARS_PER_TOKEN_ESTIMATE = 4
 
 
 # ============================================================
@@ -337,6 +358,10 @@ class RAGSystem:
     # GEMINI GENERATION WITH RETRY
     # ========================================================
 
+    @observe(
+        name="Gemini Generation",
+        as_type="generation"
+    )
     def generate_with_retry(
         self,
         prompt
@@ -359,7 +384,7 @@ class RAGSystem:
                         config=(
                             types.GenerateContentConfig(
                                 temperature=0.1,
-                                max_output_tokens=600
+                                max_output_tokens=MAX_OUTPUT_TOKENS
                             )
                         )
                     )
@@ -409,6 +434,7 @@ class RAGSystem:
     # MAIN ANSWER FUNCTION
     # ========================================================
 
+    @observe(name="SaarAI Query")
     def answer(
         self,
         question,
@@ -517,6 +543,38 @@ class RAGSystem:
             context=context,
             question=question
         )
+
+        # ----------------------------------------------------
+        # LLMOps token / cost guardrail
+        # ----------------------------------------------------
+        # Estimate the request cost before calling the LLM.
+        # This is intentionally conservative and configurable.
+        estimated_input_tokens = max(
+            1,
+            len(prompt) // CHARS_PER_TOKEN_ESTIMATE
+        )
+
+        estimated_max_cost = round(
+            (estimated_input_tokens * 0.00000015)
+            + (MAX_OUTPUT_TOKENS * 0.00000060),
+            8
+        )
+
+        if estimated_max_cost > MAX_QUERY_COST_USD:
+            return {
+                "answer": (
+                    "This request exceeds SaarAI's configured "
+                    "per-query cost limit. Please ask a more "
+                    "focused question."
+                ),
+                "sources": [],
+                "latency": round(
+                    time.time() - total_start,
+                    2
+                ),
+                "tokens": estimated_input_tokens,
+                "cost": estimated_max_cost
+            }
 
         # ----------------------------------------------------
         # Gemini
@@ -666,6 +724,13 @@ class RAGSystem:
                 )
                 + "\n"
             )
+
+        # Ensure the trace is sent to Langfuse promptly.
+        try:
+            langfuse.flush()
+        except Exception:
+            # Observability must never break the RAG application.
+            pass
 
         # ----------------------------------------------------
         # Return
